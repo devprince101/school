@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========= Local styles ========== -->
+   
+    <link rel="stylesheet" href="/files/styles/style.css">
+
+    <!-- ============== Fontawesome from cdnjs =============== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---======== Title ===========-->
     <title>Empowering minds, Inspiring future</title>
 </head>
 <body>
@@ -13,7 +23,7 @@
        <nav class="top-nav">
         <div class="logo-div">
             <a href="/" class="logo-link">
-                <img width="40px" src="./images/logo.png" alt="Global School" class="logo">
+                <img width="50px" src="./images/logo.png" alt="Global School" class="logo">
             </a>
         </div>
         <div class="slogan-div">
@@ -34,21 +44,108 @@
                 <a href="/about" class="nav-links">About</a>
             </li>
             <li class="nav-items">
-                <a href="/courses" class="nav-links">Courses</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="/courses" id="courses" class="nav-links">Courses <i class="fas fa-chevron-down"></i></a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/courses/content_writing/" class="nav-links">Content Writing</a>
+                        <a href="/courses/english/" class="nav-links">Learn English</a>
+                        <a href="/courses/graphic_design/" class="nav-links">Graphic Design</a>
+                        <a href="/courses/web_design/" class="nav-links">Web Design</a>
+                    </div>
+                  </div>
             </li>
-            <li class="nav-items">
-                <a href="/account/#login" class="login-link">login</a>
-                <div class="sign-up">
-                    <a href="/account/#sign_up" class="sign-up">sign up</a>
-                </div>
+            <li class="nav-items" id="account">
+                <a href="/account/#login" class="login-link">Login</a>
             </li>
         </ul>
        </nav>
     </header>
     <main>
+        <div class="hero-section">
+            <div class="jumbotron">
+                <h1 class="hero-header">
+                    Together, let's shape a future
+                </h1>
+                <div class="texto">
+                    <p class="hero-text">
+                        That is filled with limitless oportunities <br>
+                        for growth and sucess
+                    </p>
+                </div>
+                <div class="hero-btn">
+                    <a href="/account/#sign_up" class="hero-link">Join now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== Programs section ============ -->
+
+        <section class="Programs">
+            <h1 class="program">
+                Our Programs
+            </h1>
+            <div class="course-list">
+                <h2>Learn Without Limits</h2>
+                <div class="texto">
+                    <p class="p">
+                        In today's digital age, the opportunities for learning are limitless, 
+                        thanks to online courses. Whether you're looking to acquire new skills, 
+                        enhance your knowledge in a specific field, or simply explore a new hobby, 
+                        online courses provide a convenient and flexible way to learn without limits.
+
+                    </p>
+                </div>
+                <div class="griboxes">
+                    <div class="grid">
+                        <div class="details">
+                            <img width="100%" src="/images/uk.png" alt="Union Jack">
+                            <h3>English Language</h3>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="details">
+                            <img width="100%" src="/images/uk.png" alt="Union Jack">
+                            <h3>English Language</h3>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="details">
+                            <img width="100%" src="/images/uk.png" alt="Union Jack">
+                            <h3>English Language</h3>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="details">
+                            <img width="100%" src="/images/uk.png" alt="Union Jack">
+                            <h3>English Language</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <nav class="bottom">
+          <ul class="foo-menu">
+            <li class="foo-items">
+                <a href="/" class="foo-links">Home</a>
+            </li>
+            <li class="foo-items">
+                <a href="/" class="foo-links">About</a>
+            </li>
+            <li class="foo-items">
+                <a href="/courses" class="foo-links">Courses</a>
+            </li>
+            <li class="foo-items">
+                <a href="/account" class="foo-links">Account</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright">
+            <p class="copytext">© 2023 Global School. All Right Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

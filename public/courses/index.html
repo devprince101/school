@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========= Local styles ========== -->
+   
+
+    <!---======== Title ===========-->
     <title>Empowering minds, Inspiring future</title>
 </head>
 <body>
@@ -13,7 +18,7 @@
        <nav class="top-nav">
         <div class="logo-div">
             <a href="/" class="logo-link">
-                <img width="40px" src="./images/logo.png" alt="Global School" class="logo">
+                <img width="50px" src="./images/logo.png" alt="Global School" class="logo">
             </a>
         </div>
         <div class="slogan-div">
@@ -34,12 +39,28 @@
                 <a href="/about" class="nav-links">About</a>
             </li>
             <li class="nav-items">
-                <a href="/courses" class="nav-links">Courses</a>
+                <a href="/courses" id="courses" class="nav-links">Courses</a>
+                <div class="dropmenu">
+                    <ul class="dropdown">
+                        <li class="droplist">
+                            <a href="/courses/content_writing/" class="nav-links">Content Writing</a>
+                        </li>
+                        <li class="droplist">
+                            <a href="/courses/english/" class="nav-links">Learn English</a>
+                        </li>
+                        <li class="droplist">
+                            <a href="/courses/graphic_design/" class="nav-links">Graphic Design</a>
+                        </li>
+                        <li class="droplist">
+                            <a href="/courses/web_design/" class="nav-links">Web Design</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li class="nav-items">
+            <li class="nav-items" id="account">
                 <a href="/account/#login" class="login-link">login</a>
                 <div class="sign-up">
-                    <a href="/account/#sign_up" class="sign-up">sign up</a>
+                    <a href="/account/#sign_up" class="nav-links">sign up</a>
                 </div>
             </li>
         </ul>
@@ -48,7 +69,25 @@
     <main>
     </main>
     <footer>
-
+        <nav class="bottom">
+          <ul>
+            <li class="foo-items">
+                <a href="/" class="foo-links">Home</a>
+            </li>
+            <li class="foo-items">
+                <a href="/" class="foo-links">About</a>
+            </li>
+            <li class="foo-items">
+                <a href="/courses" class="foo-links">Courses</a>
+            </li>
+            <li class="foo-items">
+                <a href="/account" class="foo-links">Account</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright">
+            <p class="copytext">© 2023 Global School. All Right Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
