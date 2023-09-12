@@ -4,8 +4,12 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    outline: none;
+    border: none;
 }
-
+a {
+    text-decoration: none;
+}
 html,
 body {
     margin:0;
@@ -57,8 +61,14 @@ footer {
 }
 
 /* ============= Navigation bar =============================*/
-
-.navbar {
+#Navbar {
+    display: none;
+    background-color: rgba(250,0,0,.5);
+}
+.navbar-brand {
+    color: white;
+}
+.navbar-local {
     background-color: rgba(250,0,0,.5);
     display: flex;
     justify-content: space-between;
@@ -221,21 +231,65 @@ main {
     padding: 10px 0;
     margin: 0 auto;
 }
+.learn-w {
+    text-align: center;
+    color:#3EF0C2;
+    font-size: large;
+}
 .p {
     color: #3EF0C2;
     text-align: center;
 }
-
+.slow {
+    width:80%;
+    margin: 0 auto;
+}
 .griboxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .grid {
     margin: 0 auto;
-    border: 2px solid #3EF0C2;
+    border: 5px solid #3EF0C2;
     width: 100%;
+    min-height:120px;
+}
+.grid:hover .abso{
+ visibility: visible;
+ cursor: pointer;
+}
+.details {
+    position: relative;
+}
+.abso {
+    width:100%;
+    position:absolute;
+    top:0;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    transition: display 250ms ease-in-out;
+}
+.absol {
+    color:white;
+    font-size: larger; 
+    text-align: center;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.detail {
+    color: whitesmoke;
+    top:50%;
+    transform: translateY(50%);
+    background-color: rgba(0,0,0,0.2);
 }
 /* ============= Footer Section ================ */
 
@@ -275,4 +329,18 @@ footer {
     font-size: larger;
     color: black;
     text-align: center;
+}
+
+
+
+/* ========= Responsive webdesign ============ */
+
+@media screen and (max-width: 810px){
+    .navbar-local {
+        display: none;
+    }
+    #Navbar {
+        display: block;
+        padding: 0 ;
+    }
 }

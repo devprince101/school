@@ -11,7 +11,11 @@
     <!-- ============== Fontawesome from cdnjs =============== -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- ======== Bootstrap for our mobile navigation-->
 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
     <!---======== Title ===========-->
     <title>Empowering minds, Inspiring future</title>
 </head>
@@ -30,7 +34,52 @@
             <h3 class="slogan">Empowering minds, Inspiring future!</h3>
         </div>
        </nav>
-       <nav class="navbar">
+       <nav class="navbar navbar-dark" id="Navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Global School</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Global School</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/about/">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/courses/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/courses/english/">English Language</a></li>
+                        <li><a class="dropdown-item" href="/courses/graphic_design/">Graphic Design</a></li>
+                        <li> 
+                        <li><a class="dropdown-item" href="/courses/content_writing/">Content Writing</a></li>
+                        <li><a class="dropdown-item" href="/courses/web_design/">Web Design</a></li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="https://medium.com/">Resources</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/account/#login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/account/#sign_up">Sign up</a>
+                    </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+       <nav class="navbar-local">
         <div class="school-name">
             <a href="/" class="school">
                 Global School
@@ -87,8 +136,8 @@
                 Our Programs
             </h1>
             <div class="course-list">
-                <h2>Learn Without Limits</h2>
-                <div class="texto">
+                <h2 class="learn-w">Learn Without Limits</h2>
+                <div class="texto slow">
                     <p class="p">
                         In today's digital age, the opportunities for learning are limitless, 
                         thanks to online courses. Whether you're looking to acquire new skills, 
@@ -100,26 +149,46 @@
                 <div class="griboxes">
                     <div class="grid">
                         <div class="details">
+                            <h3 class="absol">English Language</h3>
                             <img width="100%" src="/images/uk.png" alt="Union Jack">
-                            <h3>English Language</h3>
+                            <div class="abso">
+                                <div class="detail">
+                                    An introductory course to help develop English vocabulary from basic to intermediate leve
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="grid">
                         <div class="details">
-                            <img width="100%" src="/images/uk.png" alt="Union Jack">
-                            <h3>English Language</h3>
+                            <h3 class="absol">Graphic Design</h3>
+                            <img width="100%" src="/images/graphic.jpg" alt="Photoshop">
+                            <div class="abso">
+                                <div class="detail">
+                                    An introductory course to help develop English vocabulary from basic to intermediate leve
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="grid">
                         <div class="details">
-                            <img width="100%" src="/images/uk.png" alt="Union Jack">
-                            <h3>English Language</h3>
+                            <h3 class="absol">Content Writing</h3>
+                            <img width="100%" src="/images/content.jpg" alt="Union Jack">
+                            <div class="abso">
+                                <div class="detail">
+                                    An introductory course to help develop English vocabulary from basic to intermediate leve
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="grid">
                         <div class="details">
-                            <img width="100%" src="/images/uk.png" alt="Union Jack">
-                            <h3>English Language</h3>
+                            <h3 class="absol">Web Design</h3>
+                            <img width="100%" src="/images/code.jpg" alt="Union Jack">
+                            <div class="abso">
+                                <div class="detail">
+                                    An introductory course to help develop English vocabulary from basic to intermediate leve
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,11 +210,19 @@
             <li class="foo-items">
                 <a href="/account" class="foo-links">Account</a>
             </li>
+            <li class="foo-items">
+                <a href="/contact/" class="foo-links">contact us</a>
+            </li>
           </ul>
         </nav>
         <div class="copyright">
             <p class="copytext">© 2023 Global School. All Right Reserved.</p>
         </div>
     </footer>
+
+    <!-- =========== Scripts for bootstrapp to work =========== -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
 </body>
 </html>
