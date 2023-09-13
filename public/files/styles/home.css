@@ -114,7 +114,7 @@ body {
     margin: 0 auto;
     border: 5px solid #3EF0C2;
     width: 100%;
-    min-height:120px;
+    min-height:130px;
 }
 .grid:hover .abso{
  visibility: visible;
@@ -127,7 +127,7 @@ body {
     width:100%;
     position:absolute;
     top:0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     padding: 10px 15px;
     height: 100%;
     display: flex;
@@ -145,7 +145,30 @@ body {
 }
 .detail {
     color: whitesmoke;
-    top:50%;
-    transform: translateY(50%);
+    padding:0 10px 10px 10px;
+    margin: 0 auto;
+    width: 100%;
     background-color: rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.learn-more {
+    margin:0 auto;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+}
+.lear { 
+    color: #0033FF;
+    background-color: #3EF0C2;
+    padding: 4px 12px;
+    text-decoration: none;
+    font-size: medium;
+    transition: all 250ms ease-in-out;
+    border-radius: 3px;
+}
+
+.lear:hover {
+    color: #3EF0C2;
+    background-color: #0033FF;
 }
