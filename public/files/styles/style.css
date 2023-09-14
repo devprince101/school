@@ -9,6 +9,7 @@
 }
 
 /*  ========== header and footer default styling ==============  */
+
 header,
 footer {
  width: 100%;
@@ -181,7 +182,12 @@ footer {
     text-align: center;
 }
 
-
+.foo-image {
+    width:80px;
+    padding: 10px;
+    position: relative;
+    margin:0 auto;
+}
 
 /* ========= Responsive webdesign ============ */
 
