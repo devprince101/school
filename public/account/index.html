@@ -8,6 +8,8 @@
 
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
    
+    <!-- ========= Local styles ========== -->
+    <link rel="stylesheet" href="/files/styles/account.css">
     <link rel="stylesheet" href="/files/styles/style.css">
 
     <!-- ============== Fontawesome from cdnjs =============== -->
@@ -105,13 +107,39 @@
     </header>
     <main>
         <div class="hero-section">
-            <h1>Coming soon!</h1>
-            <h2>in development mode</h2>
+            <h1>Unlock your learning adventure toady</h1>
+            <div class="lo-text">
+                Log in or sign up today
+            </div>
         </div>
 
         <!-- ========== Programs section ============ -->
 
         <section class="Programs">
+            <div id="login">
+                <div class="login-details">
+                     <h4 class="log">Login to your Global school account</h4>
+                     <form action="/" class="login-form" method="get">
+                           <label for="email">Email:</label><br>
+                           <input type="email" name="email" id="email" placeholder="Enter your email" required> <br>
+                           <label for="pwd">Password:</label><br>
+                           <input type="password" name="pwd" id="pwd" placeholder="Enter your Your password" required><br>
+                           <input type="submit" value="Login">
+                     </form>
+                </div>
+                <div class="login-details">
+                    <h4 class="log">First time here? create one</h4>
+                    <form action="/" class="login-form" method="get">
+                          <label for="name">Name</label>
+                          <input type="text" name="name" placeholder="Enter your full name" rquired><br>
+                          <label for="email">Email:</label>
+                          <input type="email" name="email" id="email" placeholder="Enter your email address"> <br>
+                          <label for="pwd">Password:</label>
+                          <input type="password" name="pwd" id="pwd" placeholder="Enter your Your password"><br>
+                          <input type="submit" value="Login">
+                    </form>
+               </div>
+            </div>
         </section>
     </main>
     <footer>
