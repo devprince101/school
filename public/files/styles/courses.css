@@ -32,4 +32,26 @@ body {
     color: white;
     opacity: .7;
     margin: 10px 0;
+    font-size: 150%;
+}
+.start {
+    position:relative;
+    margin:0 auto;
+}
+.start-btn {
+    position: relative;
+    padding: 5px;
+}
+.starts {
+    background-color: blue;
+    padding: 5px 15px 7px 15px;
+    font-size: 120%;
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 250ms ease-in-out;
+}
+.starts:hover {
+    
 }
