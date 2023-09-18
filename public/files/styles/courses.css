@@ -56,12 +56,22 @@ body {
     background-color: black;
 }
 
+/* ======= Featured Course area ========== */
+
+.features {
+    width:100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
 .Programs {
     margin: 0;
     position: relative;
     width: 100%;
     min-height: 40vh;
-    background-color: rgba(250,250,250,.9);
+    background-color: rgba(250,0,0,.7);
 }
 .courses {
     width: 90%;
@@ -111,4 +121,95 @@ body {
     font-size: smaller;
     padding: 4px 12px 6px 12px;
     transition: all 350ms ease-in-out;
+}
+.feature {
+    width:90%;
+    margin:0 auto;
+    padding: 20px 10px;
+    position: relative;
+}
+.heat {
+    font-size: 300%;
+    color: black;
+    font-weight: 600;
+    margin: 20px auto;
+    text-align: center;
+}
+.course-details {
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+}
+.head {
+    color: black;
+    opacity: .6;
+    font-weight: 800;
+    position: relative;
+    left: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.grid-sect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.description {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.content {
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+.write {
+    font-size: 150%;
+    font-weight: 700;
+    opacity: .6;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.6);
+    padding: 10px 0;
+}
+.descr {
+    padding: 10px 20px;
+    font-size: 120%;
+    color: rgba(0,0,0,.6);
+    font-weight: 600;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.cr {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cr small {
+    font-size: smaller;
+    color: rgba(0,0,0,.6);
+}
+.cr-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 5px;
+    position: relative;
+}
+.cr-link {
+    color: blue;
+    font-weight: 900;
+    text-decoration: none;
+    transition: all 350ms ease-in-out;
+}
+.cr-link:hover {
+    color: blue;
+    opacity: .7;
 }
