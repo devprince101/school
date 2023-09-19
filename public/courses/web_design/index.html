@@ -107,8 +107,8 @@
        </nav>
     </header>
     <main>
-        <div class="hero-section">
-            <h1>Welcome to Web Design Course</h1>
+        <div class="jumbo">
+            <h1 class="wee">Welcome to Web Design Course</h1>
         </div>
 
         <!-- ========== Programs section ============ -->
@@ -122,55 +122,172 @@
                 </div>
             </div>
             <div class="content">
-                <h2>Course Contents</h2>
+                <h2 class="cs">Course Contents</h2>
                 <div class="contents">
-                    <div class="buttona">
+                    <div onclick=(showContent()) class="buttona">
                         <button class="accordion-btn">
                         Details
                         </button>
                         <div class="right-btns">
-                            <button type="button">+</button>
-                            <button type="button">-</button>
+                            <button type="button" id="show">+</button>
+                            <button type="button" id="hidden">-</button>
                         </div>
                     </div>
                     <div class="content-details">
-                        WHAT IS WEB DESIGN?. 
-                        THE COMPONENTS OF WEB DESIGNS. 
-                        The different roles of a web designer and The importance of web design. 
-                        Different roles of a web designer. 
-                        Importance of web design. 
-                        INTRODUCTION TO HTML. 
-                        The basics of HTML. 
-                        The basics of CSS. 
-                        The different elements of HTML and CSS. 
-                        HTML Elements. 
-                        CSS Properties. 
-                        How to use HTML and CSS to create a website. 
-                        How to style the content of a website. 
-                        Introduction to JavaScript. 
-                        The basics of JavaScript. 
-                        How to use JavaScript to add interactivity to websites. 
-                        The different objects and events in JavaScript. 
-                        How to create functions and loops in JavaScript. 
-                        How to use JavaScript to validate forms. 
-                        Web development.
-                        What is web development?. 
-                        The different stages of web development. 
-                        The different roles in web development. 
-                        How to create a website from scratch. 
-                        How to deploy a website. 
-                        Web Design Projects. 
-                        How to plan and design a web project.
-                        How to code a web project.
-                        How to test and deploy a web project.
-                        How to market and promote a web project.
+                        <ul class="cdet">
+                            <li class="jus">
+                                <a href="/courses/web_design/#design" class="design">
+                                    WHAT IS WEB DESIGN? 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    THE COMPONENTS OF WEB DESIGNS.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    The different roles of a web designer and The importance of web design. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    Different roles of a web designer. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    Importance of web design.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    INTRODUCTION TO HTML. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    The basics of HTML. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    The basics of CSS. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    The different elements of HTML and CSS. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    HTML Elements. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    CSS Properties. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to use HTML and CSS to create a website. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to style the content of a website.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    Introduction to JavaScript. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    The basics of JavaScript. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to use JavaScript to add interactivity to websites. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    The different objects and events in JavaScript. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to create functions and loops in JavaScript. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to use JavaScript to validate forms.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    Web development.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    What is web development?. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                   The different stages of web development.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">    
+                                    The different roles in web development. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to create a website from scratch. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to deploy a website. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    Web Design Projects. 
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to plan and design a web project.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to code a web project.
+                                </a>
+                            </li>
+                            <li class="jus">
+                                <a href="/courses/web_design/#components" class="design">
+                                    How to market and promote a web project.
+                                </a>
+                            </li>
+                        </ul> 
 
                     </div> 
                 </div>
             </div>
         </section>
-        <section>
-            <h3> Introduction to web Design</h3>
+        <section id="design" class="components">
+            <h3 class="introduction"> Introduction to web Design</h3>
             <div class="section-details">
                 <h4>What is web design?</h4>
                 <div class="def">
@@ -246,6 +363,69 @@
                     </dl>
                 </div>
             </div>
+            <div id="components" class="section-details">
+                <h4>Components of Web Design</h4>
+                <div class="def">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/muL_JJxTerU?si=WQA9WqgiZ-vFsH_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="descript">
+                    <dl>
+                        <dt>The different components of a website can be categorized into two main types:<b> static</b> and <b>dynamic.</b></dt>
+                        <dd>
+                            <ul class="desr">
+                                <li class="desrl">
+                                    <b>Static websites:</b>
+                                    are those that do not change frequently. They are typically created using HTML and CSS, and they do not require any programming. Static websites are often used for simple projects, such as personal portfolios or business websites.
+                                </li>
+                                <li class="desrl">
+                                    <b>Dynamic websites:</b>
+                                    are those that change frequently. They are typically created using programming languages, such as PHP, Python, or JavaScript. Dynamic websites can be used for more complex projects, such as e-commerce websites or social media platforms.e.
+                                </li>
+                            </ul>
+                            <div class="extra">
+                                <p class="p">
+                                    Here are some of the most common components of a website:
+                                </p>
+                                <div class="career">
+                                    <ul class="car">
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Homepage:</a> 
+                                            The homepage is the main page of a website. It is typically the first page that visitors see, and it should provide a brief overview of the website's content and purpose.
+                                        </li>
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Navigation:</a>
+                                            The navigation is the system that allows visitors to move around a website. It typically consists of menus and links that connect different pages of the website.
+                                        </li>
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Content:</a>The content is the information that is displayed on a website. It can include text, images, videos, and other media.
+                                        </li>
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Images:</a> 
+                                            Images are used to add visual interest to a website. They can also be used to illustrate or explain the content.
+                                        </li>
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Videos:</a> 
+                                            Videos can be used to provide more information or entertainment on a website. They can also be used to tell a story or promote a product or service.
+                                        </li>
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Forms:</a> 
+                                            Forms are used to collect information from visitors. They can be used to sign up for a newsletter, request information, or make a purchase.
+                                        </li>
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Social media buttons:</a> 
+                                            Social media buttons allow visitors to share content from a website on their social media profiles.
+                                        </li>
+                                        <li class="car-list">
+                                            <a href="" class="carlink">Contact information:</a> 
+                                            Contact information is typically displayed on a website so that visitors can get in touch with the website's owner or administrator.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -279,6 +459,10 @@
     <!-- =========== Scripts for bootstrapp to work =========== -->
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  
+      <script>
+        function showContent(){
+              document.body.classList.toggle("showContent");
+        }
+      </script>
 </body>
 </html>
