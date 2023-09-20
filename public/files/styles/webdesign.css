@@ -250,3 +250,124 @@ body {
     color:blueviolet;
     text-decoration: none;
 }
+
+.role {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 0;
+    margin:0;
+    position: relative;
+    background-color: rgba(0,0,0,0.8);
+}
+.reles {
+    width:90%;
+    padding: 20px 10px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 auto;
+}
+.rol {
+    font-size: 200%;
+    color: white;
+    font-weight: 800;
+    opacity: .8;
+    margin: 20px auto;
+}
+.role-div {
+    background-color: #3EF0C2;
+    padding: 2rem 1rem;
+    position: relative;
+    border-radius: 10px;
+}
+.ro {
+    color: rgba(0,0,0,0.7);
+    font-weight: 500;
+    font-size: large;
+}
+.div-role {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+.role-menu {
+    position: relative;
+    margin: 0;
+    padding: auto;
+    list-style: none;
+}
+.roll {
+    font-size: medium;
+    color: black;
+    opacity: .8;
+    margin: 5px;
+}
+.rollink {
+    color: blueviolet;
+    opacity: 1;
+    transition: all 350ms ease-in-out;
+}
+.rollink:hover {
+    color: blue;
+    text-decoration: none;
+}
+.divi {
+    width: 90%;
+    padding: 10px;
+    background-color: #3EF0C2;
+    text-align: center;
+    margin: 0 auto;
+}
+.iframe {
+    width: 70%;
+    padding: 0;
+    position: relative;
+    margin: 10px auto;
+}
+
+.html {
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 2rem;
+    position: relative;
+}
+.elements {
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+    padding: 10px;
+}
+.what {
+    color: #3EF0C2;
+    font-weight: 900;
+    position: relative;
+    font-size: medium;
+    text-align: center;
+}
+.defi {
+    
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 1rem 2rem;
+    color: rgba(0,0,0,0.8);
+    font-weight: 600;
+}
+.different {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.ex {
+    left: 2rem;
+    position: relative;
+}
+.video {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+}
+.htm {
+    padding: 1rem 2rem;
+}
+
